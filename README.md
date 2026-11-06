@@ -18,16 +18,16 @@
 
 | 读本 | 一句话 | 在线预览 |
 |---|---|---|
-| [蚌埠 · 从天桥读城](examples/bengbu-tianqiao.html) | 一座被火车拉来的城，和铁路边一百年的早饭 | [打开](https://raw.githack.com/USERNAME/read-a-city/main/examples/bengbu-tianqiao.html) |
-| [天津 · 从大直沽读城](examples/tianjin-dazhigu.html) | 先有大直沽，后有天津卫 | [打开](https://raw.githack.com/USERNAME/read-a-city/main/examples/tianjin-dazhigu.html) |
-| [武汉 · 从粮道街读城](examples/wuhan-liangdaojie.html) | 一条叫“粮道”的街，后来成了读书和过早的街 | [打开](https://raw.githack.com/USERNAME/read-a-city/main/examples/wuhan-liangdaojie.html) |
+| [蚌埠 · 从天桥读城](examples/bengbu-tianqiao.html) | 一座被火车拉来的城，和铁路边一百年的早饭 | [打开](https://raw.githack.com/mocomeng-666/read-a-city/main/examples/bengbu-tianqiao.html) |
+| [天津 · 从大直沽读城](examples/tianjin-dazhigu.html) | 先有大直沽，后有天津卫 | [打开](https://raw.githack.com/mocomeng-666/read-a-city/main/examples/tianjin-dazhigu.html) |
+| [武汉 · 从粮道街读城](examples/wuhan-liangdaojie.html) | 一条叫“粮道”的街，后来成了读书和过早的街 | [打开](https://raw.githack.com/mocomeng-666/read-a-city/main/examples/wuhan-liangdaojie.html) |
 
 武汉那份是一个全新的会话只看这份 Skill、不看其他样例，从头独立做出来的，用了约 21 分钟。
 
 ## 安装
 
 ```bash
-git clone https://github.com/USERNAME/read-a-city.git ~/.claude/skills/read-a-city
+git clone https://github.com/mocomeng-666/read-a-city.git ~/.claude/skills/read-a-city
 ```
 
 装好以后，在 Claude Code 里任何地方都能用。
