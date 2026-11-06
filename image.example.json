@@ -1,0 +1,62 @@
+{
+  "_说明": "复制为 image.local.json 再改（该文件已在 .gitignore 里）。Key 优先读环境变量；也可填 api_key，但不要把填了 Key 的文件发给别人。型号、地址、价格以各家官方文档为准。",
+  "provider": "seedream",
+  "providers": {
+    "wan": {
+      "model": "wan2.6-image",
+      "base_url": "https://dashscope.aliyuncs.com",
+      "_base_url": "百炼新域名为 https://{WorkspaceId}.cn-beijing.maas.aliyuncs.com，旧域名官方说仍可用；不同地域 Key 不通用",
+      "size": "1152*2048",
+      "negative_prompt": "",
+      "api_key_env": "DASHSCOPE_API_KEY",
+      "api_key": "",
+      "price_per_image": 0.2,
+      "currency": "元",
+      "billing_note": "官方模型信息页：北京地域 0.2 元/张，按成功生成张数计费，失败不计费，无免费额度（2026-11-03 查）"
+    },
+    "seedream": {
+      "model": "doubao-seedream-5-0-flash-260915",
+      "_model": "开通的若是 pro，改为 doubao-seedream-5-0-pro-260628；以方舟控制台「开通管理」里的模型 ID 为准",
+      "base_url": "https://ark.cn-beijing.volces.com",
+      "size": "1152x2048",
+      "_size": "5.0 pro/flash 总像素 921600–4624220；lite 最小 2560x1440，竖版可用 1440x2560",
+      "billing_note": "flash（doubao-seedream-5-0-flash-260915）实测 0.12 元/张：2026-11-03 调用 1 次、余额扣 0.12 元，用户已核对；pro 未开通，单价未知",
+      "output_format": "png",
+      "api_key_env": "ARK_API_KEY",
+      "api_key": "",
+      "price_per_image": 0.12,
+      "currency": "元"
+    },
+    "kling": {
+      "model": "kling/kling-v3-image-generation",
+      "base_url": "https://dashscope.aliyuncs.com",
+      "_base_url": "可灵在百炼上只开放华北2（北京），需先在控制台开通“可灵AI”；旧域名不通时换 https://{WorkspaceId}.cn-beijing.maas.aliyuncs.com",
+      "_ref": "参考图只收公网 URL；本型号只收一张，多图用 kling/kling-v3-omni-image-generation",
+      "aspect_ratio": "9:16",
+      "resolution": "2k",
+      "api_key_env": "DASHSCOPE_API_KEY",
+      "api_key": "",
+      "price_per_image": 0.2,
+      "currency": "元",
+      "billing_note": "官方文档：按输入图像张数和成功生成的图像张数计费，0.2 元/张为北京地域单价（2026-11-02 查）"
+    },
+    "openai": {
+      "model": "gpt-image-1",
+      "base_url": "https://api.openai.com",
+      "size": "1024x1536",
+      "api_key_env": "OPENAI_API_KEY",
+      "api_key": "",
+      "price_per_image": null,
+      "currency": "美元"
+    },
+    "gemini": {
+      "model": "gemini-2.5-flash-image",
+      "base_url": "https://generativelanguage.googleapis.com",
+      "aspect_ratio": "9:16",
+      "api_key_env": "GEMINI_API_KEY",
+      "api_key": "",
+      "price_per_image": null,
+      "currency": "美元"
+    }
+  }
+}

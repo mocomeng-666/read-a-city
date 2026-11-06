@@ -1,0 +1,7 @@
+# 本地生图配置，可能含 API Key，不进仓库
+image.local.json
+*.local.json
+
+__pycache__/
+.DS_Store
+walked-streets.md
