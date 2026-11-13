@@ -2,7 +2,7 @@
 
 <img src="docs/cover.jpg" width="360" align="right" alt="走在街上，看见一百年前">
 
-一个 [Claude Code](https://claude.com/claude-code) Skill。告诉它你要去哪座城市，它帮你挑一条有故事、又不太挤的老街，讲讲这条街从前是什么样，配几张“百年前”的场景画，最后做成一个手机上能翻的网页。
+一个基于 `SKILL.md` 的读城技能。告诉它你要去哪座城市，它帮你挑一条有故事、又不太挤的老街，讲讲这条街从前是什么样，配几张“百年前”的场景画，最后做成一个手机上能翻的网页。
 
 走在街上，你看到的就不只是今天的样子。
 
@@ -26,11 +26,14 @@
 
 ## 安装
 
+适用于支持 `SKILL.md`、能联网检索并运行本地脚本（Python 3）的 AI 编程 / 桌面 Agent。将仓库克隆到所用工具的技能目录即可（具体路径以对应工具说明为准）：
+
 ```bash
-git clone https://github.com/mocomeng-666/read-a-city.git ~/.claude/skills/read-a-city
+# 例如放入 ~/.agents/skills 或 ~/.claude/skills 等技能目录
+git clone https://github.com/mocomeng-666/read-a-city.git ~/.agents/skills/read-a-city
 ```
 
-装好以后，在 Claude Code 里任何地方都能用。
+也可以点击右上角 **Code → Download ZIP** 下载解压，将文件夹改名为 `read-a-city` 后放入技能目录。
 
 ## 怎么用
 
@@ -67,7 +70,7 @@ Key 只放环境变量或 `image.local.json`（已在 `.gitignore` 里），不�
 ## 目录
 
 ```
-SKILL.md                 工作流程（Claude 读的）
+SKILL.md                 工作流程（Agent 读的）
 references/              样例读本、提示词模板、生图服务商说明
 scripts/                 打包网页、画漫步图、做场景图卡、调用生图 API 的脚本（只用 Python 标准库 + macOS 自带工具）
 examples/                三份样例读本
